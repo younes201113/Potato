@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+.login input {
+  padding: 8px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.login button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.game-area {
+  margin-top: 30px;
+}
+#potato {
+  width: 200px;
+  transition: transform 0.2s;
+}
+#potato.press {
+  transform: scale(1.2);
+}
+#clickBtn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.score-display {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.leaderboard {
+  margin-top: 30px;
+  text-align: center;
+}
+#leaderboardList {
+  list-style: none;
+  padding: 0;
+}
+#leaderboardList li {
+  padding: 6px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
