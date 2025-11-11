@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Click the Potato 🥔</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">Click the Potato 🥔</h1>
+      <p class="subtitle">أهلاً بك! اكتب اسمك واضغط على البطاطا.</p>
+    </header>
+
+    <main>
+      <div class="player-area">
+        <input type="text" id="nameInput" placeholder="اكتب اسمك هنا" />
+        <div id="greeting" class="greeting" style="display:none;">👋 أهلاً يا <span id="playerName"></span> — اضغط البطاطا!</div>
+
+        <div class="potato-wrap">
+          <!-- SVG potato image -->
+          <img id="potatoImg" src="potato.svg" alt="Potato" draggable="false" />
+          <audio id="squish" src="squish.wav"></audio>
+          <div class="count-badge">عدد كبساتك: <span id="myCount">0</span></div>
+        </div>
+
+        <button id="clickBtn" class="big-btn">كبّة!</button>
+      </div>
+
+      <section class="leaderboard">
+        <h2>الترتيب - أعلى اللاعبين</h2>
+        <ul id="leaderboardList"></ul>
+      </section>
+    </main>
+    <footer>صنع بواسطة Click the Potato — مخصّص لمسابقتك</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
