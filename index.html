@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تكبيس البطاطا 🥔</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- تسجيل الدخول -->
+  <div class="login">
+    <input type="text" id="playerNameInput" placeholder="اكتب اسمك هنا">
+    <button id="loginBtn">دخول</button>
+  </div>
+
+  <!-- منطقة البطاطا -->
+  <div class="game-area">
+    <img id="potato" src="https://i.imgur.com/7l6U5OX.png" alt="بطاطا">
+    <button id="clickBtn">اضغط على البطاطا</button>
+    <div class="score-display">نقاطك: <span id="score">0</span></div>
+  </div>
+
+  <!-- لوحة المتصدرين -->
+  <div class="leaderboard">
+    <h2>قائمة المتصدرين</h2>
+    <ol id="leaderboardList"></ol>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
